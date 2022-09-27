@@ -8,7 +8,7 @@ class usuario extends Model
 {
 
     protected $fillable = [
-
+ 
     'usucodigo',
     'usunombre',
     'usupassw',

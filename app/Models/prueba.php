@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class prueba extends Model
 {
     protected $fillable = [
-
+        'pr_id',
         'codigo',
         'nombre',
         'confirmar',

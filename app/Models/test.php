@@ -8,7 +8,7 @@ class test extends Model
 {
 
     protected $fillable = [
-
+        'opa_id',
         'nombre',
         'apellido'];
 

@@ -54,9 +54,12 @@ class areaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request,$id)
     {
-        //
+        $cl = area::findOrfail($id);
+        $cl -> arenombre = $request -> arenombre;
+        $cl -> update();
+        return $cl;
     }
 
     /**
@@ -86,5 +89,12 @@ class areaController extends Controller
     {
         $cl = area::findOrfail($opa_id);
         $cl -> delete();
+    }
+
+    public function buscarid($idEmp)
+    {
+        $user = area::where("areempresa","=",$idEmp)->get();
+       
+        return  $user;
     }
 }

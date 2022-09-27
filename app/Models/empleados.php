@@ -8,7 +8,6 @@ class empleados extends Model
 {
 
     protected $fillable = [
-     
         'emdcedula' ,
         'emdnombres' ,
         'emdapellidos' ,
@@ -34,14 +33,18 @@ class empleados extends Model
         'emdtipocontrato' ,
         'emdhorasdia'  ,
         'emdtiposalario' ,
-        'emdfechareg' ,
         'emdusuarioreg' ,
-        'emdfechamod' ,
-        'emdipreg' 
-    
+        'emdipreg',
+        'emdactivo',
+        'emdzona',
+        'emdtraciudad',
+        'emdtradepartamento',
+        'emdfechamod',
+        'emdfechareg'
     ];
 
     protected $table = 'empleado';
     protected $primaryKey = 'emdid';
     public $timestamps = false;
 }
+

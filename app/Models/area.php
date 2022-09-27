@@ -8,7 +8,7 @@ class area extends Model
 {
 
     protected $fillable = [
-        'areid' ,
+
         'areempresa' ,
         'arenombre' ,
         'arefechaini' ,

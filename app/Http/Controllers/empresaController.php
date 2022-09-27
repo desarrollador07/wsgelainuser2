@@ -92,4 +92,11 @@ class empresaController extends Controller
         $cl = empresa::findOrfail($opa_id);
         $cl -> delete();
     }
+    
+            public function buscaridempresa($idEmp)
+    {
+    $user = empresa::where("empid","=",$idEmp)->get();
+       
+        return  $user;
+    }
 }
